@@ -94,6 +94,7 @@ public class ImmunizationObservationStatementMapper {
 
     private List<String> retrievePertinentInformation(Immunization immunization) {
         return List.of(
+            buildNotePertinentInformation(immunization),
             buildParentPresentPertinentInformation(immunization),
             buildLocationPertinentInformation(immunization),
             buildManufacturerPertinentInformation(immunization),
@@ -104,8 +105,7 @@ public class ImmunizationObservationStatementMapper {
             buildDoseQuantityPertinentInformation(immunization),
             buildExplanationPertinentInformation(immunization),
             buildVaccinationProtocolPertinentInformation(immunization),
-            buildVaccineCode(immunization),
-            buildNotePertinentInformation(immunization)
+            buildVaccineCode(immunization)
             );
     }
 
