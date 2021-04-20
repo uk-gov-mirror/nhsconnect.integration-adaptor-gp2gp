@@ -8,7 +8,6 @@ import lombok.Setter;
 @Setter
 @Builder
 public class AllergyStructureTemplateParameters {
-    private String ehrCompositionId;
     private String allergyStructureId;
     private String observationId;
     private String pertinentInformation;
